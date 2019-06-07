@@ -184,9 +184,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/a206621635/Xamarin_CornHole/CornHole/CornHole.csproj",
-      "projectName": "CornHole",
-      "projectPath": "/Users/a206621635/Xamarin_CornHole/CornHole/CornHole.csproj",
+      "projectUniqueName": "/Users/a206621635/Xamarin_CornHole/CornHole/CommonLib.csproj",
+      "projectName": "CommonLib",
+      "projectPath": "/Users/a206621635/Xamarin_CornHole/CornHole/CommonLib.csproj",
       "packagesPath": "/Users/a206621635/.nuget/packages/",
       "outputPath": "/Users/a206621635/Xamarin_CornHole/CornHole/obj/",
       "projectStyle": "PackageReference",
