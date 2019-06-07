@@ -184,11 +184,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/a206621635/Projects/CornHole/CornHole/CornHole.csproj",
+      "projectUniqueName": "/Users/a206621635/Xamarin_CornHole/CornHole/CornHole.csproj",
       "projectName": "CornHole",
-      "projectPath": "/Users/a206621635/Projects/CornHole/CornHole/CornHole.csproj",
+      "projectPath": "/Users/a206621635/Xamarin_CornHole/CornHole/CornHole.csproj",
       "packagesPath": "/Users/a206621635/.nuget/packages/",
-      "outputPath": "/Users/a206621635/Projects/CornHole/CornHole/obj/",
+      "outputPath": "/Users/a206621635/Xamarin_CornHole/CornHole/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
