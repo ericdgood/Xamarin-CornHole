@@ -1,19 +1,19 @@
-﻿<Properties StartupConfiguration="{66142964-EF4E-4DF2-8DBE-5C40EA27A6E8}|Default">
-  <MonoDevelop.Ide.ItemProperties.DroidCornhole AndroidDesignerPreferredDevice="Nexus 4" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DroidCornhole/MainActivity.cs">
+﻿<Properties StartupConfiguration="{13AA5DB4-1019-48F3-94ED-74B2C48C8B84}|Default">
+  <MonoDevelop.Ide.ItemProperties.DroidCornhole PreferredExecutionTarget="Android.Android_Accelerated_Oreo" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CornHole/CornholeViewModel.cs">
     <Files>
-      <File FileName="CornHole/CornholeViewModel.cs" Line="16" Column="33" />
-      <File FileName="CornHole/CornholeViewManager.cs" Line="5" Column="6" />
-      <File FileName="DroidCornhole/MainActivity.cs" Line="15" Column="72" />
+      <File FileName="CornHole/CornholeViewManager.cs" Line="6" Column="1" />
+      <File FileName="DroidCornhole/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="CornHole/CornholeViewModel.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CornHole" expanded="True">
-            <Node name="CommonLib" expanded="True" />
-            <Node name="DroidCornhole" expanded="True">
-              <Node name="MainActivity.cs" selected="True" />
+            <Node name="CommonLib" expanded="True">
+              <Node name="CornholeViewModel.cs" selected="True" />
             </Node>
+            <Node name="DroidCornhole" expanded="True" />
           </Node>
         </State>
       </Pad>

@@ -311,6 +311,16 @@
         "runtime": {
           "lib/monoandroid81/Xamarin.Essentials.dll": {}
         }
+      },
+      "CommonLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/CommonLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonLib.dll": {}
+        }
       }
     }
   },
@@ -769,10 +779,16 @@
         "xamarin.essentials.1.1.0.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
+    },
+    "CommonLib/1.0.0": {
+      "type": "project",
+      "path": "../CornHole/CommonLib.csproj",
+      "msbuildProject": "../CornHole/CommonLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v8.1": [
+      "CommonLib >= 1.0.0",
       "Xamarin.Android.Support.Constraint.Layout >= 1.1.2",
       "Xamarin.Android.Support.Core.Utils >= 28.0.0.1",
       "Xamarin.Android.Support.CustomTabs >= 28.0.0.1",
@@ -805,7 +821,11 @@
       },
       "frameworks": {
         "monoandroid81": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/a206621635/Xamarin_CornHole/CornHole/CommonLib.csproj": {
+              "projectPath": "/Users/a206621635/Xamarin_CornHole/CornHole/CommonLib.csproj"
+            }
+          }
         }
       }
     },

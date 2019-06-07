@@ -3,6 +3,6 @@ namespace CommonLib
 {
     public interface ICornholeViewManager
     {
-        void ShowMessage(string message);
+        void UpdateRoundScore(int team1RoundScore, int team2RoundScore);
     }
 }

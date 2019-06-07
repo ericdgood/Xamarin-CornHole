@@ -11,7 +11,9 @@ namespace DroidCornhole
     public class MainActivity : AppCompatActivity, ICornholeViewManager
     {
         CornholeViewModel viewModel;
-        protected Button BtnTeamAThreePoints => (Button)FindViewById(Resource.Id.btnTeamA3Point);
+        protected Button BtnTeam1ThreePoints => (Button)FindViewById(Resource.Id.btnTeamA3Point);
+        protected Button BtnTeam1OnePoints => (Button)FindViewById(Resource.Id.btnTeamA1Point);
+        protected TextView TvTeam1RoundScore => (TextView)FindViewById(Resource.Id.tvTeamARound);
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -21,10 +23,14 @@ namespace DroidCornhole
 
             viewModel = new CornholeViewModel(this);
 
-            BtnTeamAThreePoints.Click += delegate
+            BtnTeam1ThreePoints.Click += delegate
             {
+                viewModel.AddPoints(3, 1);
+            };
 
-                viewModel.ShowMessage();
+            BtnTeam1OnePoints.Click += delegate
+            {
+                viewModel.AddPoints(1, 1);
             };
         }
 
@@ -35,9 +41,9 @@ namespace DroidCornhole
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
 
-        public void ShowMessage(string message)
+        public void UpdateRoundScore(int team1RoundScore, int team2RoundScore)
         {
-            Toast.MakeText(this, message, ToastLength.Short).Show();
+            TvTeam1RoundScore.Text = team1RoundScore.ToString();
         }
     }
 }
