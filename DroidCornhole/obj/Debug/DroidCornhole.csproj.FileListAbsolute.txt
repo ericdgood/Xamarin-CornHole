@@ -4,6 +4,7 @@
 /Users/a206621635/Xamarin_CornHole/DroidCornhole/bin/Debug/com.companyname.cornhole-Signed.apk
 /Users/a206621635/Xamarin_CornHole/DroidCornhole/obj/Debug/DroidCornhole.nuget.stamp
 /Users/a206621635/Xamarin_CornHole/DroidCornhole/obj/Debug/MonoAndroid,Version=v8.1.AssemblyAttributes.cs
+/Users/a206621635/Xamarin_CornHole/DroidCornhole/obj/Debug/DroidCornhole.csprojAssemblyReference.cache
 /Users/a206621635/Xamarin_CornHole/DroidCornhole/obj/Debug/libraryimports.cache.stamp
 /Users/a206621635/Xamarin_CornHole/DroidCornhole/obj/Debug/res.flag
 /Users/a206621635/Xamarin_CornHole/DroidCornhole/obj/Debug/DroidCornhole.csproj.CoreCompileInputs.cache
@@ -35,8 +36,12 @@
 /Users/a206621635/Xamarin_CornHole/DroidCornhole/obj/Debug/R.cs.flag
 /Users/a206621635/Xamarin_CornHole/DroidCornhole/obj/Debug/R.txt
 /Users/a206621635/Xamarin_CornHole/DroidCornhole/obj/Debug/uploadflags.txt
+/Users/a206621635/Xamarin_CornHole/DroidCornhole/bin/Debug/CommonLib.dll
+/Users/a206621635/Xamarin_CornHole/DroidCornhole/bin/Debug/CommonLib.pdb
+/Users/a206621635/Xamarin_CornHole/DroidCornhole/obj/Debug/DroidCornhole.csproj.CopyComplete
 /Users/a206621635/Xamarin_CornHole/DroidCornhole/bin/Debug/Mono.Android.pdb
 /Users/a206621635/Xamarin_CornHole/DroidCornhole/obj/Debug/linksrc/DroidCornhole.pdb
+/Users/a206621635/Xamarin_CornHole/DroidCornhole/obj/Debug/linksrc/CommonLib.pdb
 /Users/a206621635/Xamarin_CornHole/DroidCornhole/obj/Debug/linksrc/Mono.Android.pdb
 /Users/a206621635/Xamarin_CornHole/DroidCornhole/bin/Debug/Xamarin.Essentials.dll.mdb
 /Users/a206621635/Xamarin_CornHole/DroidCornhole/obj/Debug/linksrc/Xamarin.Essentials.dll.mdb

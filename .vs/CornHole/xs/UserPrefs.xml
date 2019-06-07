@@ -1,14 +1,17 @@
-﻿<Properties StartupConfiguration="{13AA5DB4-1019-48F3-94ED-74B2C48C8B84}|Default">
-  <MonoDevelop.Ide.ItemProperties.DroidCornhole AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.pixel" />
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties StartupConfiguration="{66142964-EF4E-4DF2-8DBE-5C40EA27A6E8}|Default">
+  <MonoDevelop.Ide.ItemProperties.DroidCornhole AndroidDesignerPreferredDevice="Nexus 4" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="DroidCornhole/MainActivity.cs">
+    <Files>
+      <File FileName="CornHole/CornholeViewModel.cs" Line="16" Column="33" />
+      <File FileName="CornHole/CornholeViewManager.cs" Line="5" Column="6" />
+      <File FileName="DroidCornhole/MainActivity.cs" Line="15" Column="72" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CornHole" expanded="True">
+            <Node name="CommonLib" expanded="True" />
             <Node name="DroidCornhole" expanded="True">
-              <Node name="Resources" expanded="True">
-                <Node name="layout" expanded="True" />
-              </Node>
               <Node name="MainActivity.cs" selected="True" />
             </Node>
           </Node>
