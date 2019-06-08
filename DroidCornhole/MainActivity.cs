@@ -4,6 +4,7 @@ using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
 using CommonLib;
+using System;
 
 namespace DroidCornhole
 {
@@ -15,8 +16,11 @@ namespace DroidCornhole
         protected Button BtnTeam1OnePoints => (Button)FindViewById(Resource.Id.btnTeam11Point);
         protected Button BtnTeam2ThreePoints => (Button)FindViewById(Resource.Id.btnTeam23Point);
         protected Button BtnTeam2OnePoints => (Button)FindViewById(Resource.Id.btnTeam21Point);
+        protected Button BtnNextRound => (Button)FindViewById(Resource.Id.btnNextRound);
         protected TextView TvTeam1RoundScore => (TextView)FindViewById(Resource.Id.tvTeam1Round);
         protected TextView TvTeam2RoundScore => (TextView)FindViewById(Resource.Id.tvTeam2Round);
+        protected TextView TvTeam1GameScore => (TextView)FindViewById(Resource.Id.tvTeam1Score);
+        protected TextView TvTeam2GameScore => (TextView)FindViewById(Resource.Id.tvTeam2Score);
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -25,7 +29,20 @@ namespace DroidCornhole
             SetContentView(Resource.Layout.activity_main);
 
             viewModel = new CornholeViewModel(this);
+            PointsButtons();
+            NewRoundButton();
+        }
 
+        private void NewRoundButton()
+        {
+            BtnNextRound.Click += delegate
+            {
+                viewModel.NewRound();
+            };
+        }
+
+        private void PointsButtons()
+        {
             BtnTeam1ThreePoints.Click += delegate
             {
                 viewModel.AddPoints(3, 1);
@@ -58,6 +75,12 @@ namespace DroidCornhole
         {
             TvTeam1RoundScore.Text = team1RoundScore.ToString();
             TvTeam2RoundScore.Text = team2RoundScore.ToString();
+        }
+
+        public void UpdateGameScore(int team1GameScore, int team2GameScore)
+        {
+            TvTeam1GameScore.Text = team1GameScore.ToString();
+            TvTeam2GameScore.Text = team2GameScore.ToString();
         }
     }
 }
