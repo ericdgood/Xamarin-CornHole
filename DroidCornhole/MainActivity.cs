@@ -11,9 +11,12 @@ namespace DroidCornhole
     public class MainActivity : AppCompatActivity, ICornholeViewManager
     {
         CornholeViewModel viewModel;
-        protected Button BtnTeam1ThreePoints => (Button)FindViewById(Resource.Id.btnTeamA3Point);
-        protected Button BtnTeam1OnePoints => (Button)FindViewById(Resource.Id.btnTeamA1Point);
-        protected TextView TvTeam1RoundScore => (TextView)FindViewById(Resource.Id.tvTeamARound);
+        protected Button BtnTeam1ThreePoints => (Button)FindViewById(Resource.Id.btnTeam13Point);
+        protected Button BtnTeam1OnePoints => (Button)FindViewById(Resource.Id.btnTeam11Point);
+        protected Button BtnTeam2ThreePoints => (Button)FindViewById(Resource.Id.btnTeam23Point);
+        protected Button BtnTeam2OnePoints => (Button)FindViewById(Resource.Id.btnTeam21Point);
+        protected TextView TvTeam1RoundScore => (TextView)FindViewById(Resource.Id.tvTeam1Round);
+        protected TextView TvTeam2RoundScore => (TextView)FindViewById(Resource.Id.tvTeam2Round);
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -32,6 +35,16 @@ namespace DroidCornhole
             {
                 viewModel.AddPoints(1, 1);
             };
+
+            BtnTeam2OnePoints.Click += delegate
+            {
+                viewModel.AddPoints(1, 2);
+            };
+
+            BtnTeam2ThreePoints.Click += delegate
+            {
+                viewModel.AddPoints(3, 2);
+            };
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
@@ -44,6 +57,7 @@ namespace DroidCornhole
         public void UpdateRoundScore(int team1RoundScore, int team2RoundScore)
         {
             TvTeam1RoundScore.Text = team1RoundScore.ToString();
+            TvTeam2RoundScore.Text = team2RoundScore.ToString();
         }
     }
 }

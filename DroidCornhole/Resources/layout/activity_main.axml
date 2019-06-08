@@ -19,31 +19,31 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:id="@+id/tvTeamATitle"/>
+                android:id="@+id/tvTeam1Title"/>
         <TextView
-                tools:text="TextView"
+                android:text="0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tvTeamAScore"
+                android:id="@+id/tvTeam1Score"
                 android:textSize="24sp"
                 android:layout_marginTop="8dp"/>
         <TextView
-                tools:text="TextView"
+                android:text="0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:id="@+id/tvTeamARound"/>
+                android:id="@+id/tvTeam1Round"/>
         <Button
                 android:text="+3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/btnTeamA3Point"
+                android:id="@+id/btnTeam13Point"
                 android:layout_marginTop="8dp"/>
         <Button
                 android:text="+1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/btnTeamA1Point"
+                android:id="@+id/btnTeam11Point"
                 android:layout_marginTop="8dp"
         />
     </LinearLayout>
@@ -73,35 +73,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:id="@+id/tvTeamBTitle"
+                android:id="@+id/tvTeam2Title"
         />
         <TextView
-                tools:text="TextView"
+                android:text="0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tvTeamBScore"
+                android:id="@+id/tvTeam2Score"
                 android:textSize="24sp"
                 android:layout_marginTop="8dp"
         />
         <TextView
-                tools:text="TextView"
+                android:text="0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-               android:id="@+id/tvTeamBRound"
+               android:id="@+id/tvTeam2Round"
         />
         <Button
                 android:text="+3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/btnTeamB3Point"
+                android:id="@+id/btnTeam23Point"
                 android:layout_marginTop="8dp"
         />
        <Button
                 android:text="+1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/btnTeamB1Point"
+                android:id="@+id/btnTeam21Point"
                 android:layout_marginTop="8dp"/>
     </LinearLayout>
     

@@ -2709,16 +2709,16 @@ namespace DroidCornhole
 			public const int bottom = 2131296317;
 			
 			// aapt resource value: 0x7f09009e
-			public const int btnTeamA1Point = 2131296414;
+			public const int btnTeam11Point = 2131296414;
 			
 			// aapt resource value: 0x7f09009d
-			public const int btnTeamA3Point = 2131296413;
+			public const int btnTeam13Point = 2131296413;
 			
 			// aapt resource value: 0x7f0900a4
-			public const int btnTeamB1Point = 2131296420;
+			public const int btnTeam21Point = 2131296420;
 			
 			// aapt resource value: 0x7f0900a3
-			public const int btnTeamB3Point = 2131296419;
+			public const int btnTeam23Point = 2131296419;
 			
 			// aapt resource value: 0x7f0900a6
 			public const int button3 = 2131296422;
@@ -3165,22 +3165,22 @@ namespace DroidCornhole
 			public const int transition_transform = 2131296275;
 			
 			// aapt resource value: 0x7f09009c
-			public const int tvTeamARound = 2131296412;
+			public const int tvTeam1Round = 2131296412;
 			
 			// aapt resource value: 0x7f09009b
-			public const int tvTeamAScore = 2131296411;
+			public const int tvTeam1Score = 2131296411;
 			
 			// aapt resource value: 0x7f09009a
-			public const int tvTeamATitle = 2131296410;
+			public const int tvTeam1Title = 2131296410;
 			
 			// aapt resource value: 0x7f0900a2
-			public const int tvTeamBRound = 2131296418;
+			public const int tvTeam2Round = 2131296418;
 			
 			// aapt resource value: 0x7f0900a1
-			public const int tvTeamBScore = 2131296417;
+			public const int tvTeam2Score = 2131296417;
 			
 			// aapt resource value: 0x7f0900a0
-			public const int tvTeamBTitle = 2131296416;
+			public const int tvTeam2Title = 2131296416;
 			
 			// aapt resource value: 0x7f090098
 			public const int tvTitle = 2131296408;
