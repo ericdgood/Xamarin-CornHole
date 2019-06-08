@@ -17,6 +17,7 @@ namespace DroidCornhole
         protected Button BtnTeam2ThreePoints => (Button)FindViewById(Resource.Id.btnTeam23Point);
         protected Button BtnTeam2OnePoints => (Button)FindViewById(Resource.Id.btnTeam21Point);
         protected Button BtnNextInning => (Button)FindViewById(Resource.Id.btnNextInning);
+        protected Button BtnNewGame => (Button)FindViewById(Resource.Id.btnNewGame);
         protected TextView TvTeam1InningScore => (TextView)FindViewById(Resource.Id.tvTeam1Inning);
         protected TextView TvTeam2InningScore => (TextView)FindViewById(Resource.Id.tvTeam2Inning);
         protected TextView TvTeam1GameScore => (TextView)FindViewById(Resource.Id.tvTeam1Score);
@@ -32,6 +33,15 @@ namespace DroidCornhole
             viewModel = new CornholeViewModel(this);
             PointsButtons();
             NewInningButton();
+            NewGame();
+        }
+
+        private void NewGame()
+        {
+            BtnNewGame.Click += delegate
+            {
+                viewModel.NewGame();
+            };
         }
 
         private void NewInningButton()

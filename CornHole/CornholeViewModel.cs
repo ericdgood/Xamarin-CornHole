@@ -42,6 +42,19 @@ namespace CommonLib
             InningNumber++;
             viewManager.UpdateInningNumber(InningNumber);
         }
+
+        public void NewGame()
+        {
+            Team1GameScore = 0;
+            Team1InningScore = 0;
+            Team2GameScore = 0;
+            Team2InningScore = 0;
+            InningNumber = 1;
+
+            viewManager.UpdateInningScore(Team1InningScore, Team2InningScore);
+            viewManager.UpdateGameScore(Team1GameScore, Team2GameScore);
+            viewManager.UpdateInningNumber(InningNumber);
+        }
     }
 }
 
