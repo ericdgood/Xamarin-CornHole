@@ -793,7 +793,6 @@ int id ALT 0x7f090032
 int id CTRL 0x7f090033
 int id FUNCTION 0x7f090034
 int id META 0x7f090035
-int id RoundNumber 0x7f0900a5
 int id SHIFT 0x7f090036
 int id SYM 0x7f090037
 int id action0 0x7f0900ba
@@ -827,12 +826,11 @@ int id beginning 0x7f09002f
 int id blocking 0x7f090064
 int id bottom 0x7f09003d
 int id btnNewGame 0x7f0900a8
-int id btnNextRound 0x7f0900a7
+int id btnNextInning 0x7f0900a7
 int id btnTeam11Point 0x7f09009e
 int id btnTeam13Point 0x7f09009d
 int id btnTeam21Point 0x7f0900a4
 int id btnTeam23Point 0x7f0900a3
-int id button3 0x7f0900a6
 int id buttonPanel 0x7f090070
 int id cancel_action 0x7f0900bb
 int id center 0x7f090045
@@ -979,10 +977,12 @@ int id transition_layout_save 0x7f090010
 int id transition_position 0x7f090011
 int id transition_scene_layoutid_cache 0x7f090012
 int id transition_transform 0x7f090013
-int id tvTeam1Round 0x7f09009c
+int id tvInningLabel 0x7f0900a5
+int id tvInningNumber 0x7f0900a6
+int id tvTeam1Inning 0x7f09009c
 int id tvTeam1Score 0x7f09009b
 int id tvTeam1Title 0x7f09009a
-int id tvTeam2Round 0x7f0900a2
+int id tvTeam2Inning 0x7f0900a2
 int id tvTeam2Score 0x7f0900a1
 int id tvTeam2Title 0x7f0900a0
 int id tvTitle 0x7f090098

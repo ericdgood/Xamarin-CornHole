@@ -16,11 +16,12 @@ namespace DroidCornhole
         protected Button BtnTeam1OnePoints => (Button)FindViewById(Resource.Id.btnTeam11Point);
         protected Button BtnTeam2ThreePoints => (Button)FindViewById(Resource.Id.btnTeam23Point);
         protected Button BtnTeam2OnePoints => (Button)FindViewById(Resource.Id.btnTeam21Point);
-        protected Button BtnNextRound => (Button)FindViewById(Resource.Id.btnNextRound);
-        protected TextView TvTeam1RoundScore => (TextView)FindViewById(Resource.Id.tvTeam1Round);
-        protected TextView TvTeam2RoundScore => (TextView)FindViewById(Resource.Id.tvTeam2Round);
+        protected Button BtnNextInning => (Button)FindViewById(Resource.Id.btnNextInning);
+        protected TextView TvTeam1InningScore => (TextView)FindViewById(Resource.Id.tvTeam1Inning);
+        protected TextView TvTeam2InningScore => (TextView)FindViewById(Resource.Id.tvTeam2Inning);
         protected TextView TvTeam1GameScore => (TextView)FindViewById(Resource.Id.tvTeam1Score);
         protected TextView TvTeam2GameScore => (TextView)FindViewById(Resource.Id.tvTeam2Score);
+        protected TextView TvInningNumber => (TextView)FindViewById(Resource.Id.tvInningNumber);
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -30,14 +31,14 @@ namespace DroidCornhole
 
             viewModel = new CornholeViewModel(this);
             PointsButtons();
-            NewRoundButton();
+            NewInningButton();
         }
 
-        private void NewRoundButton()
+        private void NewInningButton()
         {
-            BtnNextRound.Click += delegate
+            BtnNextInning.Click += delegate
             {
-                viewModel.NewRound();
+                viewModel.NewInning();
             };
         }
 
@@ -71,16 +72,21 @@ namespace DroidCornhole
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
 
-        public void UpdateRoundScore(int team1RoundScore, int team2RoundScore)
+        public void UpdateInningScore(int team1InningScore, int team2InningScore)
         {
-            TvTeam1RoundScore.Text = team1RoundScore.ToString();
-            TvTeam2RoundScore.Text = team2RoundScore.ToString();
+            TvTeam1InningScore.Text = team1InningScore.ToString();
+            TvTeam2InningScore.Text = team2InningScore.ToString();
         }
 
         public void UpdateGameScore(int team1GameScore, int team2GameScore)
         {
             TvTeam1GameScore.Text = team1GameScore.ToString();
             TvTeam2GameScore.Text = team2GameScore.ToString();
+        }
+
+        public void UpdateInningNumber(int inningNumber)
+        {
+            TvInningNumber.Text = inningNumber.ToString();
         }
     }
 }

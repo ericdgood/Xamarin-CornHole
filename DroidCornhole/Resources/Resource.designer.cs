@@ -2609,9 +2609,6 @@ namespace DroidCornhole
 			// aapt resource value: 0x7f090035
 			public const int META = 2131296309;
 			
-			// aapt resource value: 0x7f0900a5
-			public const int RoundNumber = 2131296421;
-			
 			// aapt resource value: 0x7f090036
 			public const int SHIFT = 2131296310;
 			
@@ -2712,7 +2709,7 @@ namespace DroidCornhole
 			public const int btnNewGame = 2131296424;
 			
 			// aapt resource value: 0x7f0900a7
-			public const int btnNextRound = 2131296423;
+			public const int btnNextInning = 2131296423;
 			
 			// aapt resource value: 0x7f09009e
 			public const int btnTeam11Point = 2131296414;
@@ -2725,9 +2722,6 @@ namespace DroidCornhole
 			
 			// aapt resource value: 0x7f0900a3
 			public const int btnTeam23Point = 2131296419;
-			
-			// aapt resource value: 0x7f0900a6
-			public const int button3 = 2131296422;
 			
 			// aapt resource value: 0x7f090070
 			public const int buttonPanel = 2131296368;
@@ -3167,8 +3161,14 @@ namespace DroidCornhole
 			// aapt resource value: 0x7f090013
 			public const int transition_transform = 2131296275;
 			
+			// aapt resource value: 0x7f0900a5
+			public const int tvInningLabel = 2131296421;
+			
+			// aapt resource value: 0x7f0900a6
+			public const int tvInningNumber = 2131296422;
+			
 			// aapt resource value: 0x7f09009c
-			public const int tvTeam1Round = 2131296412;
+			public const int tvTeam1Inning = 2131296412;
 			
 			// aapt resource value: 0x7f09009b
 			public const int tvTeam1Score = 2131296411;
@@ -3177,7 +3177,7 @@ namespace DroidCornhole
 			public const int tvTeam1Title = 2131296410;
 			
 			// aapt resource value: 0x7f0900a2
-			public const int tvTeam2Round = 2131296418;
+			public const int tvTeam2Inning = 2131296418;
 			
 			// aapt resource value: 0x7f0900a1
 			public const int tvTeam2Score = 2131296417;

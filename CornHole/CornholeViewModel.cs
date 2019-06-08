@@ -5,9 +5,10 @@ namespace CommonLib
     {
         protected ICornholeViewManager viewManager;
         protected int Team1GameScore;
-        protected int Team1RoundScore;
+        protected int Team1InningScore;
         protected int Team2GameScore;
-        protected int Team2RoundScore;
+        protected int Team2InningScore;
+        protected int InningNumber = 1;
 
         public CornholeViewModel(ICornholeViewManager viewManager)
         {
@@ -18,25 +19,28 @@ namespace CommonLib
         {
             if (TeamNumber == 1)
             {
-                Team1RoundScore += Points;
-                viewManager.UpdateRoundScore(Team1RoundScore, Team2RoundScore);
+                Team1InningScore += Points;
+                viewManager.UpdateInningScore(Team1InningScore, Team2InningScore);
             }
             else
             {
-                Team2RoundScore += Points;
-                viewManager.UpdateRoundScore(Team1RoundScore, Team2RoundScore);
+                Team2InningScore += Points;
+                viewManager.UpdateInningScore(Team1InningScore, Team2InningScore);
             }
         }
 
-        public void NewRound()
+        public void NewInning()
         {
-            Team1GameScore = (Team1RoundScore - Team2RoundScore) > 0 ? (Team1RoundScore - Team2RoundScore + Team1GameScore) : Team1GameScore;
-            Team2GameScore = (Team2RoundScore - Team1RoundScore) > 0 ? (Team2RoundScore - Team1RoundScore + Team2GameScore) : Team2GameScore;
-            Team1RoundScore = 0;
-            Team2RoundScore = 0;
+            Team1GameScore = (Team1InningScore - Team2InningScore) > 0 ? (Team1InningScore - Team2InningScore + Team1GameScore) : Team1GameScore;
+            Team2GameScore = (Team2InningScore - Team1InningScore) > 0 ? (Team2InningScore - Team1InningScore + Team2GameScore) : Team2GameScore;
+            Team1InningScore = 0;
+            Team2InningScore = 0;
 
-            viewManager.UpdateRoundScore(Team1RoundScore, Team2RoundScore);
+            viewManager.UpdateInningScore(Team1InningScore, Team2InningScore);
             viewManager.UpdateGameScore(Team1GameScore, Team2GameScore);
+
+            InningNumber++;
+            viewManager.UpdateInningNumber(InningNumber);
         }
     }
 }
