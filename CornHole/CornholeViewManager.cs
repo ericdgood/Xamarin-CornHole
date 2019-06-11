@@ -3,7 +3,7 @@ namespace CommonLib
 {
     public interface ICornholeViewManager
     {
-        void UpdateInningScore(int team1RoundScore, int team2RoundScore);
+        void UpdateInningScore(int team1InningScore, int team2InningScore);
         void UpdateGameScore(int team1GameScore, int team2GameScore);
         void UpdateInningNumber(int inningNumber);
     }

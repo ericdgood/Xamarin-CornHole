@@ -6,4 +6,3 @@
 /Users/a206621635/Xamarin_CornHole/CornHole/obj/Debug/netstandard2.0/CommonLib.AssemblyInfo.cs
 /Users/a206621635/Xamarin_CornHole/CornHole/obj/Debug/netstandard2.0/CommonLib.dll
 /Users/a206621635/Xamarin_CornHole/CornHole/obj/Debug/netstandard2.0/CommonLib.pdb
-/Users/a206621635/Xamarin_CornHole/CornHole/obj/Debug/netstandard2.0/CommonLib.csprojAssemblyReference.cache

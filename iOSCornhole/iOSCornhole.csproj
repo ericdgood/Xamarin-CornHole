@@ -135,5 +135,11 @@
             <DependentUpon>ViewController.cs</DependentUpon>
         </Compile>
     </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\CornHole\CommonLib.csproj">
+        <Project>{440F2C9F-3666-4143-8E1F-67EA4F6DE634}</Project>
+        <Name>CommonLib</Name>
+      </ProjectReference>
+    </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

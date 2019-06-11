@@ -3541,7 +3541,6 @@ containing a value of this type.
         public static int CTRL=0x7f090033;
         public static int FUNCTION=0x7f090034;
         public static int META=0x7f090035;
-        public static int RoundNumber=0x7f0900a5;
         public static int SHIFT=0x7f090036;
         public static int SYM=0x7f090037;
         public static int action0=0x7f0900ba;
@@ -3575,12 +3574,11 @@ containing a value of this type.
         public static int blocking=0x7f090064;
         public static int bottom=0x7f09003d;
         public static int btnNewGame=0x7f0900a8;
-        public static int btnNextRound=0x7f0900a7;
+        public static int btnNextInning=0x7f0900a7;
         public static int btnTeam11Point=0x7f09009e;
         public static int btnTeam13Point=0x7f09009d;
         public static int btnTeam21Point=0x7f0900a4;
         public static int btnTeam23Point=0x7f0900a3;
-        public static int button3=0x7f0900a6;
         public static int buttonPanel=0x7f090070;
         public static int cancel_action=0x7f0900bb;
         public static int center=0x7f090045;
@@ -3727,10 +3725,12 @@ containing a value of this type.
         public static int transition_position=0x7f090011;
         public static int transition_scene_layoutid_cache=0x7f090012;
         public static int transition_transform=0x7f090013;
-        public static int tvTeam1Round=0x7f09009c;
+        public static int tvInningLabel=0x7f0900a5;
+        public static int tvInningNumber=0x7f0900a6;
+        public static int tvTeam1Inning=0x7f09009c;
         public static int tvTeam1Score=0x7f09009b;
         public static int tvTeam1Title=0x7f09009a;
-        public static int tvTeam2Round=0x7f0900a2;
+        public static int tvTeam2Inning=0x7f0900a2;
         public static int tvTeam2Score=0x7f0900a1;
         public static int tvTeam2Title=0x7f0900a0;
         public static int tvTitle=0x7f090098;
