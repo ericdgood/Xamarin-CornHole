@@ -22,6 +22,16 @@
         "runtime": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
+      },
+      "CommonLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/CommonLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonLib.dll": {}
+        }
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
@@ -44,6 +54,16 @@
         },
         "runtime": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        }
+      },
+      "CommonLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/CommonLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonLib.dll": {}
         }
       }
     },
@@ -68,6 +88,16 @@
         "runtime": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
         }
+      },
+      "CommonLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/CommonLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonLib.dll": {}
+        }
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
@@ -90,6 +120,16 @@
         },
         "runtime": {
           "lib/xamarinios10/Xamarin.Essentials.dll": {}
+        }
+      },
+      "CommonLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/CommonLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonLib.dll": {}
         }
       }
     }
@@ -174,10 +214,16 @@
         "xamarin.essentials.1.0.1.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
+    },
+    "CommonLib/1.0.0": {
+      "type": "project",
+      "path": "../CornHole/CommonLib.csproj",
+      "msbuildProject": "../CornHole/CommonLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
+      "CommonLib >= 1.0.0",
       "Xamarin.Essentials >= 1.0.1"
     ]
   },
@@ -206,7 +252,11 @@
       },
       "frameworks": {
         "xamarinios10": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/a206621635/Xamarin_CornHole/CornHole/CommonLib.csproj": {
+              "projectPath": "/Users/a206621635/Xamarin_CornHole/CornHole/CommonLib.csproj"
+            }
+          }
         }
       }
     },

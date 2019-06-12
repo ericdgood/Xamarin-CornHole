@@ -9,114 +9,136 @@ using System.CodeDom.Compiler;
 
 namespace iOSCornhole
 {
-	[Register ("ViewController")]
-	partial class ViewController
-	{
-		[Outlet]
-		UIKit.UIButton btnNewGame { get; set; }
+    [Register("ViewController")]
+    partial class ViewController
+    {
+        [Outlet]
+        UIKit.UIButton btnNewGame { get; set; }
 
-		[Outlet]
-		UIKit.UIButton btnNewInning { get; set; }
+        [Outlet]
+        UIKit.UIButton btnNewInning { get; set; }
 
-		[Outlet]
-		UIKit.UIButton btnTeam1OnePoint { get; set; }
+        [Outlet]
+        UIKit.UIButton btnTeam1OnePoint { get; set; }
 
-		[Outlet]
-		UIKit.UIButton btnTeam1ThreePoints { get; set; }
+        [Outlet]
+        UIKit.UIButton btnTeam1ThreePoints { get; set; }
 
-		[Outlet]
-		UIKit.UIButton btnTeam2OnePoint { get; set; }
+        [Outlet]
+        UIKit.UIButton btnTeam2OnePoint { get; set; }
 
-		[Outlet]
-		UIKit.UIButton btnTeam2ThreePoints { get; set; }
+        [Outlet]
+        UIKit.UIButton btnTeam2ThreePoints { get; set; }
 
-		[Outlet]
-		UIKit.UILabel tvInningNumber { get; set; }
+        [Outlet]
+        UIKit.UILabel titleLabel { get; set; }
 
-		[Outlet]
-		UIKit.UILabel tvTeam1GameScore { get; set; }
+        [Outlet]
+        UIKit.UILabel tvInningNumber { get; set; }
 
-		[Outlet]
-		UIKit.UILabel tvTeam1InningScore { get; set; }
+        [Outlet]
+        UIKit.UILabel tvTeam1GameScore { get; set; }
 
-		[Outlet]
-		UIKit.UILabel tvTeam1Name { get; set; }
+        [Outlet]
+        UIKit.UILabel tvTeam1InningScore { get; set; }
 
-		[Outlet]
-		UIKit.UILabel tvTeam2GameScore { get; set; }
+        [Outlet]
+        UIKit.UILabel tvTeam1Name { get; set; }
 
-		[Outlet]
-		UIKit.UILabel tvTeam2InningScore { get; set; }
+        [Outlet]
+        UIKit.UILabel tvTeam2GameScore { get; set; }
 
-		[Outlet]
-		UIKit.UILabel tvTeam2Name { get; set; }
-		
-		void ReleaseDesignerOutlets ()
-		{
-			if (btnTeam2ThreePoints != null) {
-				btnTeam2ThreePoints.Dispose ();
-				btnTeam2ThreePoints = null;
-			}
+        [Outlet]
+        UIKit.UILabel tvTeam2InningScore { get; set; }
 
-			if (btnTeam2OnePoint != null) {
-				btnTeam2OnePoint.Dispose ();
-				btnTeam2OnePoint = null;
-			}
+        [Outlet]
+        UIKit.UILabel tvTeam2Name { get; set; }
 
-			if (tvTeam2Name != null) {
-				tvTeam2Name.Dispose ();
-				tvTeam2Name = null;
-			}
+        void ReleaseDesignerOutlets()
+        {
+            if (titleLabel != null)
+            {
+                titleLabel.Dispose();
+                titleLabel = null;
+            }
 
-			if (tvTeam2InningScore != null) {
-				tvTeam2InningScore.Dispose ();
-				tvTeam2InningScore = null;
-			}
+            if (btnNewGame != null)
+            {
+                btnNewGame.Dispose();
+                btnNewGame = null;
+            }
 
-			if (tvTeam2GameScore != null) {
-				tvTeam2GameScore.Dispose ();
-				tvTeam2GameScore = null;
-			}
+            if (btnNewInning != null)
+            {
+                btnNewInning.Dispose();
+                btnNewInning = null;
+            }
 
-			if (tvTeam1GameScore != null) {
-				tvTeam1GameScore.Dispose ();
-				tvTeam1GameScore = null;
-			}
+            if (btnTeam1OnePoint != null)
+            {
+                btnTeam1OnePoint.Dispose();
+                btnTeam1OnePoint = null;
+            }
 
-			if (tvTeam1InningScore != null) {
-				tvTeam1InningScore.Dispose ();
-				tvTeam1InningScore = null;
-			}
+            if (btnTeam1ThreePoints != null)
+            {
+                btnTeam1ThreePoints.Dispose();
+                btnTeam1ThreePoints = null;
+            }
 
-			if (tvTeam1Name != null) {
-				tvTeam1Name.Dispose ();
-				tvTeam1Name = null;
-			}
+            if (btnTeam2OnePoint != null)
+            {
+                btnTeam2OnePoint.Dispose();
+                btnTeam2OnePoint = null;
+            }
 
-			if (btnTeam1ThreePoints != null) {
-				btnTeam1ThreePoints.Dispose ();
-				btnTeam1ThreePoints = null;
-			}
+            if (btnTeam2ThreePoints != null)
+            {
+                btnTeam2ThreePoints.Dispose();
+                btnTeam2ThreePoints = null;
+            }
 
-			if (btnTeam1OnePoint != null) {
-				btnTeam1OnePoint.Dispose ();
-				btnTeam1OnePoint = null;
-			}
+            if (tvInningNumber != null)
+            {
+                tvInningNumber.Dispose();
+                tvInningNumber = null;
+            }
 
-			if (tvInningNumber != null) {
-				tvInningNumber.Dispose ();
-				tvInningNumber = null;
-			}
+            if (tvTeam1GameScore != null)
+            {
+                tvTeam1GameScore.Dispose();
+                tvTeam1GameScore = null;
+            }
 
-			if (btnNewInning != null) {
-				btnNewInning.Dispose ();
-				btnNewInning = null;
-			}
+            if (tvTeam1InningScore != null)
+            {
+                tvTeam1InningScore.Dispose();
+                tvTeam1InningScore = null;
+            }
 
-			if (btnNewGame != null) {
-				btnNewGame.Dispose ();
-				btnNewGame = null;
-			}
-		}
-	}
+            if (tvTeam1Name != null)
+            {
+                tvTeam1Name.Dispose();
+                tvTeam1Name = null;
+            }
+
+            if (tvTeam2GameScore != null)
+            {
+                tvTeam2GameScore.Dispose();
+                tvTeam2GameScore = null;
+            }
+
+            if (tvTeam2InningScore != null)
+            {
+                tvTeam2InningScore.Dispose();
+                tvTeam2InningScore = null;
+            }
+
+            if (tvTeam2Name != null)
+            {
+                tvTeam2Name.Dispose();
+                tvTeam2Name = null;
+            }
+        }
+    }
 }
