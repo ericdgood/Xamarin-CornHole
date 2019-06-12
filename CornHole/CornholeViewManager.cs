@@ -6,5 +6,6 @@ namespace CommonLib
         void UpdateInningScore(int team1InningScore, int team2InningScore);
         void UpdateGameScore(int team1GameScore, int team2GameScore);
         void UpdateInningNumber(int inningNumber);
+        void WinningColors(int leadingTeam);
     }
 }

@@ -23,6 +23,9 @@ namespace DroidCornhole
         protected TextView TvTeam1GameScore => (TextView)FindViewById(Resource.Id.tvTeam1Score);
         protected TextView TvTeam2GameScore => (TextView)FindViewById(Resource.Id.tvTeam2Score);
         protected TextView TvInningNumber => (TextView)FindViewById(Resource.Id.tvInningNumber);
+        // Team names
+        protected TextView TvTeam1Name => (TextView)FindViewById(Resource.Id.tvTeam1Name);
+        protected TextView TvTeam2Name => (TextView)FindViewById(Resource.Id.tvTeam2Name);
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -34,6 +37,9 @@ namespace DroidCornhole
             PointsButtons();
             NewInningButton();
             NewGame();
+
+            TvTeam1Name.Text = "Team 1 Test";
+            TvTeam2Name.Text = "Team 2 Test";
         }
 
         private void NewGame()
@@ -97,6 +103,25 @@ namespace DroidCornhole
         public void UpdateInningNumber(int inningNumber)
         {
             TvInningNumber.Text = inningNumber.ToString();
+        }
+
+        public void WinningColors(int leadingTeam)
+        {
+            if (leadingTeam == 1)
+            {
+                TvTeam1Name.SetBackgroundColor(Android.Graphics.Color.Green);
+                TvTeam2Name.SetBackgroundColor(Android.Graphics.Color.Red);
+            }
+            if (leadingTeam == 2)
+            {
+                TvTeam2Name.SetBackgroundColor(Android.Graphics.Color.Green);
+                TvTeam1Name.SetBackgroundColor(Android.Graphics.Color.Red);
+            }
+            if (leadingTeam == 3)
+            {
+                TvTeam1Name.SetBackgroundColor(Android.Graphics.Color.Transparent);
+                TvTeam2Name.SetBackgroundColor(Android.Graphics.Color.Transparent);
+            }
         }
     }
 }

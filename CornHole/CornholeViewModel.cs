@@ -41,6 +41,7 @@ namespace CommonLib
 
             InningNumber++;
             viewManager.UpdateInningNumber(InningNumber);
+            viewManager.WinningColors(WinningColors());
         }
 
         public void NewGame()
@@ -54,6 +55,12 @@ namespace CommonLib
             viewManager.UpdateInningScore(Team1InningScore, Team2InningScore);
             viewManager.UpdateGameScore(Team1GameScore, Team2GameScore);
             viewManager.UpdateInningNumber(InningNumber);
+            viewManager.WinningColors(3);
+        }
+
+        private int WinningColors()
+        {
+            return Team1GameScore > Team2GameScore ? 1 : Team2GameScore > Team1GameScore ? 2 : 3;
         }
     }
 }

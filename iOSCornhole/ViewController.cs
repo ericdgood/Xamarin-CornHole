@@ -52,5 +52,24 @@ namespace iOSCornhole
         {
             tvInningNumber.Text = inningNumber.ToString();
         }
+
+        public void WinningColors(int leadingTeam)
+        {
+            if (leadingTeam == 1)
+            {
+                tvTeam1Name.BackgroundColor = UIColor.Green;
+                tvTeam2Name.BackgroundColor = UIColor.Red;
+            }
+            if (leadingTeam == 2)
+            {
+                tvTeam1Name.BackgroundColor = UIColor.Red;
+                tvTeam2Name.BackgroundColor = UIColor.Green;
+            }
+            if (leadingTeam == 3)
+            {
+                tvTeam1Name.BackgroundColor = UIColor.Clear;
+                tvTeam2Name.BackgroundColor = UIColor.Clear;
+            }
+        }
     }
 }

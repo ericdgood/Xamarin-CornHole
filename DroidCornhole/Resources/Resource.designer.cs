@@ -1460,44 +1460,44 @@ namespace DroidCornhole
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0d004b
-			public const int abc_background_cache_hint_selector_material_dark = 2131558475;
-			
-			// aapt resource value: 0x7f0d004c
-			public const int abc_background_cache_hint_selector_material_light = 2131558476;
-			
 			// aapt resource value: 0x7f0d004d
-			public const int abc_btn_colored_borderless_text_material = 2131558477;
+			public const int abc_background_cache_hint_selector_material_dark = 2131558477;
 			
 			// aapt resource value: 0x7f0d004e
-			public const int abc_btn_colored_text_material = 2131558478;
+			public const int abc_background_cache_hint_selector_material_light = 2131558478;
 			
 			// aapt resource value: 0x7f0d004f
-			public const int abc_color_highlight_material = 2131558479;
+			public const int abc_btn_colored_borderless_text_material = 2131558479;
 			
 			// aapt resource value: 0x7f0d0050
-			public const int abc_hint_foreground_material_dark = 2131558480;
+			public const int abc_btn_colored_text_material = 2131558480;
 			
 			// aapt resource value: 0x7f0d0051
-			public const int abc_hint_foreground_material_light = 2131558481;
+			public const int abc_color_highlight_material = 2131558481;
+			
+			// aapt resource value: 0x7f0d0052
+			public const int abc_hint_foreground_material_dark = 2131558482;
+			
+			// aapt resource value: 0x7f0d0053
+			public const int abc_hint_foreground_material_light = 2131558483;
 			
 			// aapt resource value: 0x7f0d0000
 			public const int abc_input_method_navigation_guard = 2131558400;
 			
-			// aapt resource value: 0x7f0d0052
-			public const int abc_primary_text_disable_only_material_dark = 2131558482;
-			
-			// aapt resource value: 0x7f0d0053
-			public const int abc_primary_text_disable_only_material_light = 2131558483;
-			
 			// aapt resource value: 0x7f0d0054
-			public const int abc_primary_text_material_dark = 2131558484;
+			public const int abc_primary_text_disable_only_material_dark = 2131558484;
 			
 			// aapt resource value: 0x7f0d0055
-			public const int abc_primary_text_material_light = 2131558485;
+			public const int abc_primary_text_disable_only_material_light = 2131558485;
 			
 			// aapt resource value: 0x7f0d0056
-			public const int abc_search_url_text = 2131558486;
+			public const int abc_primary_text_material_dark = 2131558486;
+			
+			// aapt resource value: 0x7f0d0057
+			public const int abc_primary_text_material_light = 2131558487;
+			
+			// aapt resource value: 0x7f0d0058
+			public const int abc_search_url_text = 2131558488;
 			
 			// aapt resource value: 0x7f0d0001
 			public const int abc_search_url_text_normal = 2131558401;
@@ -1508,29 +1508,29 @@ namespace DroidCornhole
 			// aapt resource value: 0x7f0d0003
 			public const int abc_search_url_text_selected = 2131558403;
 			
-			// aapt resource value: 0x7f0d0057
-			public const int abc_secondary_text_material_dark = 2131558487;
-			
-			// aapt resource value: 0x7f0d0058
-			public const int abc_secondary_text_material_light = 2131558488;
-			
 			// aapt resource value: 0x7f0d0059
-			public const int abc_tint_btn_checkable = 2131558489;
+			public const int abc_secondary_text_material_dark = 2131558489;
 			
 			// aapt resource value: 0x7f0d005a
-			public const int abc_tint_default = 2131558490;
+			public const int abc_secondary_text_material_light = 2131558490;
 			
 			// aapt resource value: 0x7f0d005b
-			public const int abc_tint_edittext = 2131558491;
+			public const int abc_tint_btn_checkable = 2131558491;
 			
 			// aapt resource value: 0x7f0d005c
-			public const int abc_tint_seek_thumb = 2131558492;
+			public const int abc_tint_default = 2131558492;
 			
 			// aapt resource value: 0x7f0d005d
-			public const int abc_tint_spinner = 2131558493;
+			public const int abc_tint_edittext = 2131558493;
 			
 			// aapt resource value: 0x7f0d005e
-			public const int abc_tint_switch_track = 2131558494;
+			public const int abc_tint_seek_thumb = 2131558494;
+			
+			// aapt resource value: 0x7f0d005f
+			public const int abc_tint_spinner = 2131558495;
+			
+			// aapt resource value: 0x7f0d0060
+			public const int abc_tint_switch_track = 2131558496;
 			
 			// aapt resource value: 0x7f0d0004
 			public const int accent_material_dark = 2131558404;
@@ -1586,8 +1586,8 @@ namespace DroidCornhole
 			// aapt resource value: 0x7f0d003c
 			public const int design_bottom_navigation_shadow_color = 2131558460;
 			
-			// aapt resource value: 0x7f0d005f
-			public const int design_error = 2131558495;
+			// aapt resource value: 0x7f0d0061
+			public const int design_error = 2131558497;
 			
 			// aapt resource value: 0x7f0d003d
 			public const int design_fab_shadow_end_color = 2131558461;
@@ -1613,8 +1613,8 @@ namespace DroidCornhole
 			// aapt resource value: 0x7f0d0044
 			public const int design_snackbar_background_color = 2131558468;
 			
-			// aapt resource value: 0x7f0d0060
-			public const int design_tint_password_toggle = 2131558496;
+			// aapt resource value: 0x7f0d0062
+			public const int design_tint_password_toggle = 2131558498;
 			
 			// aapt resource value: 0x7f0d0012
 			public const int dim_foreground_disabled_material_dark = 2131558418;
@@ -1643,8 +1643,11 @@ namespace DroidCornhole
 			// aapt resource value: 0x7f0d001a
 			public const int highlighted_text_material_light = 2131558426;
 			
-			// aapt resource value: 0x7f0d004a
-			public const int ic_launcher_background = 2131558474;
+			// aapt resource value: 0x7f0d004c
+			public const int ic_launcher_background = 2131558476;
+			
+			// aapt resource value: 0x7f0d004b
+			public const int losingRed = 2131558475;
 			
 			// aapt resource value: 0x7f0d001b
 			public const int material_blue_grey_800 = 2131558427;
@@ -1739,11 +1742,11 @@ namespace DroidCornhole
 			// aapt resource value: 0x7f0d0036
 			public const int switch_thumb_disabled_material_light = 2131558454;
 			
-			// aapt resource value: 0x7f0d0061
-			public const int switch_thumb_material_dark = 2131558497;
+			// aapt resource value: 0x7f0d0063
+			public const int switch_thumb_material_dark = 2131558499;
 			
-			// aapt resource value: 0x7f0d0062
-			public const int switch_thumb_material_light = 2131558498;
+			// aapt resource value: 0x7f0d0064
+			public const int switch_thumb_material_light = 2131558500;
 			
 			// aapt resource value: 0x7f0d0037
 			public const int switch_thumb_normal_material_dark = 2131558455;
@@ -1756,6 +1759,9 @@ namespace DroidCornhole
 			
 			// aapt resource value: 0x7f0d003a
 			public const int tooltip_background_light = 2131558458;
+			
+			// aapt resource value: 0x7f0d004a
+			public const int winnigGreen = 2131558474;
 			
 			static Color()
 			{
@@ -3170,20 +3176,20 @@ namespace DroidCornhole
 			// aapt resource value: 0x7f09009c
 			public const int tvTeam1Inning = 2131296412;
 			
+			// aapt resource value: 0x7f09009a
+			public const int tvTeam1Name = 2131296410;
+			
 			// aapt resource value: 0x7f09009b
 			public const int tvTeam1Score = 2131296411;
-			
-			// aapt resource value: 0x7f09009a
-			public const int tvTeam1Title = 2131296410;
 			
 			// aapt resource value: 0x7f0900a2
 			public const int tvTeam2Inning = 2131296418;
 			
+			// aapt resource value: 0x7f0900a0
+			public const int tvTeam2Name = 2131296416;
+			
 			// aapt resource value: 0x7f0900a1
 			public const int tvTeam2Score = 2131296417;
-			
-			// aapt resource value: 0x7f0900a0
-			public const int tvTeam2Title = 2131296416;
 			
 			// aapt resource value: 0x7f090098
 			public const int tvTitle = 2131296408;
