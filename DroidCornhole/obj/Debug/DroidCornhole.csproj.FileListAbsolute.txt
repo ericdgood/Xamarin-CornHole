@@ -39,6 +39,7 @@
 /Users/a206621635/Xamarin_CornHole/DroidCornhole/obj/Debug/R.cs.flag
 /Users/a206621635/Xamarin_CornHole/DroidCornhole/obj/Debug/R.txt
 /Users/a206621635/Xamarin_CornHole/DroidCornhole/obj/Debug/uploadflags.txt
+/Users/a206621635/Xamarin_CornHole/DroidCornhole/obj/Debug/res/layout/home_page.xml
 /Users/a206621635/Xamarin_CornHole/DroidCornhole/bin/Debug/Mono.Android.pdb
 /Users/a206621635/Xamarin_CornHole/DroidCornhole/obj/Debug/linksrc/DroidCornhole.pdb
 /Users/a206621635/Xamarin_CornHole/DroidCornhole/obj/Debug/linksrc/CommonLib.pdb

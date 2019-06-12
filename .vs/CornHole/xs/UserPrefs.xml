@@ -1,23 +1,25 @@
-﻿<Properties StartupConfiguration="{66142964-EF4E-4DF2-8DBE-5C40EA27A6E8}|Default">
+﻿<Properties StartupConfiguration="{13AA5DB4-1019-48F3-94ED-74B2C48C8B84}|Default">
   <MonoDevelop.Ide.ItemProperties.DroidCornhole AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.pixel" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOSCornhole/ViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CornHole/CornholeViewModel.cs">
     <Files>
-      <File FileName="DroidCornhole/MainActivity.cs" Line="110" Column="13" />
-      <File FileName="iOSCornhole/ViewController.cs" Line="56" Column="47" />
+      <File FileName="DroidCornhole/Views/HomePage.cs" Line="31" Column="39" />
+      <File FileName="DroidCornhole/Views/MainActivity.cs" Line="43" Column="10" />
+      <File FileName="CornHole/HomePageViewModel.cs" Line="4" Column="18" />
+      <File FileName="CornHole/HomePageViewManager.cs" Line="1" Column="1" />
+      <File FileName="CornHole/CornholeViewModel.cs" Line="13" Column="59" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CornHole" expanded="True">
-            <Node name="CommonLib" expanded="True" />
+            <Node name="CommonLib" expanded="True">
+              <Node name="CornholeViewModel.cs" selected="True" />
+            </Node>
             <Node name="DroidCornhole" expanded="True">
               <Node name="Resources" expanded="True">
                 <Node name="layout" expanded="True" />
-                <Node name="values" expanded="True" />
               </Node>
-            </Node>
-            <Node name="iOSCornhole" expanded="True">
-              <Node name="ViewController.cs" expanded="True" selected="True" />
+              <Node name="Views" expanded="True" />
             </Node>
           </Node>
         </State>
