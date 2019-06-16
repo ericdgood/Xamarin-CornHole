@@ -18,16 +18,16 @@ namespace iOSCornhole
             CornholeViewModel viewModel = new CornholeViewModel(this);
 
             OnPointButtonClick(viewModel);
-            btnNewInning.TouchUpInside += (sender, e) => viewModel.NewInning();
-            btnNewGame.TouchUpInside += (sender, e) => viewModel.NewGame();
+            btnNewInning.TouchUpInside += (sender, e) => viewModel.OnNewInningButtonClick();
+            btnNewGame.TouchUpInside += (sender, e) => viewModel.OnNewGameButtonClick();
         }
 
         private void OnPointButtonClick(CornholeViewModel viewModel)
         {
-            btnTeam1ThreePoints.TouchUpInside += (sender, e) => viewModel.AddPoints(3, 1);
-            btnTeam1OnePoint.TouchUpInside += (sender, e) => viewModel.AddPoints(1, 1);
-            btnTeam2OnePoint.TouchUpInside += (sender, e) => viewModel.AddPoints(1, 2);
-            btnTeam2ThreePoints.TouchUpInside += (sender, e) => viewModel.AddPoints(3, 2);
+            btnTeam1ThreePoints.TouchUpInside += (sender, e) => viewModel.OnAddPointsButtonClick(3, 1);
+            btnTeam1OnePoint.TouchUpInside += (sender, e) => viewModel.OnAddPointsButtonClick(1, 1);
+            btnTeam2OnePoint.TouchUpInside += (sender, e) => viewModel.OnAddPointsButtonClick(1, 2);
+            btnTeam2ThreePoints.TouchUpInside += (sender, e) => viewModel.OnAddPointsButtonClick(3, 2);
         }
 
         public override void DidReceiveMemoryWarning()

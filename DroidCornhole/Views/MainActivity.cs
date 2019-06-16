@@ -9,7 +9,7 @@ using Android.Content;
 
 namespace DroidCornhole
 {
-    [Activity(Label = "@string/app_name")]
+    [Activity(Label = "@string/app_name", MainLauncher = true)]
     public class MainActivity : AppCompatActivity, ICornholeViewManager
     {
         CornholeViewModel viewModel;
@@ -19,6 +19,7 @@ namespace DroidCornhole
         protected Button BtnTeam2OnePoints => (Button)FindViewById(Resource.Id.btnTeam21Point);
         protected Button BtnNextInning => (Button)FindViewById(Resource.Id.btnNextInning);
         protected Button BtnNewGame => (Button)FindViewById(Resource.Id.btnNewGame);
+        protected Button BtnUndo => (Button)FindViewById(Resource.Id.btnUndo);
         protected TextView TvTeam1InningScore => (TextView)FindViewById(Resource.Id.tvTeam1Inning);
         protected TextView TvTeam2InningScore => (TextView)FindViewById(Resource.Id.tvTeam2Inning);
         protected TextView TvTeam1GameScore => (TextView)FindViewById(Resource.Id.tvTeam1Score);
@@ -35,50 +36,59 @@ namespace DroidCornhole
             SetContentView(Resource.Layout.activity_main);
 
             viewModel = new CornholeViewModel(this);
-            PointsButtons();
-            NewInningButton();
-            NewGame();
+            OnPointsAddButtonClick();
+            OnNewInningButtonClick();
+            OnNewGameButtoClick();
+            OnUndoButtonClick();
 
-            TvTeam1Name.Text = (Intent.GetStringExtra("Team1Name") ?? "No name");
-            TvTeam2Name.Text = Intent.GetStringExtra("Team2Name");
+            TvTeam1Name.Text = "Tea 1 Name";
+            TvTeam2Name.Text = "Team 2 Name";
         }
 
-        private void NewGame()
+        private void OnUndoButtonClick()
+        {
+            BtnUndo.Click += delegate
+            {
+                viewModel.OnUndoButtonClick();
+            };
+        }
+
+        private void OnNewGameButtoClick()
         {
             BtnNewGame.Click += delegate
             {
-                viewModel.NewGame();
+                viewModel.OnNewGameButtonClick();
             };
         }
 
-        private void NewInningButton()
+        private void OnNewInningButtonClick()
         {
             BtnNextInning.Click += delegate
             {
-                viewModel.NewInning();
+                viewModel.OnNewInningButtonClick();
             };
         }
 
-        private void PointsButtons()
+        private void OnPointsAddButtonClick()
         {
             BtnTeam1ThreePoints.Click += delegate
             {
-                viewModel.AddPoints(3, 1);
+                viewModel.OnAddPointsButtonClick(3, 1);
             };
 
             BtnTeam1OnePoints.Click += delegate
             {
-                viewModel.AddPoints(1, 1);
+                viewModel.OnAddPointsButtonClick(1, 1);
             };
 
             BtnTeam2OnePoints.Click += delegate
             {
-                viewModel.AddPoints(1, 2);
+                viewModel.OnAddPointsButtonClick(1, 2);
             };
 
             BtnTeam2ThreePoints.Click += delegate
             {
-                viewModel.AddPoints(3, 2);
+                viewModel.OnAddPointsButtonClick(3, 2);
             };
         }
 
@@ -123,6 +133,17 @@ namespace DroidCornhole
                 TvTeam1Name.SetBackgroundColor(Android.Graphics.Color.Transparent);
                 TvTeam2Name.SetBackgroundColor(Android.Graphics.Color.Transparent);
             }
+        }
+
+        public void ShowWinningMessage(string WinngMessage)
+        {
+            Toast.MakeText(this, WinngMessage, ToastLength.Short).Show();
+        }
+
+        public void ShowOver21Message(string Over21Message)
+        {
+            Toast.MakeText(this, Over21Message, ToastLength.Short).Show();
+
         }
     }
 }

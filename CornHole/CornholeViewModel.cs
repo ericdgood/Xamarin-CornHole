@@ -9,27 +9,32 @@ namespace CommonLib
         protected int Team2GameScore;
         protected int Team2InningScore;
         protected int InningNumber = 1;
+        protected int UndoTeam1Score;
+        protected int UndoTeam2Score;
 
         public CornholeViewModel(ICornholeViewManager viewManager)
         {
             this.viewManager = viewManager ?? throw new ArgumentNullException(nameof(viewManager));
         }
 
-        public void AddPoints(int Points, int TeamNumber)
+        public void OnAddPointsButtonClick(int Points, int TeamNumber)
         {
+            UndoTeam1Score = Team1InningScore;
+            UndoTeam2Score = Team2InningScore;
+
             if (TeamNumber == 1)
             {
                 Team1InningScore += Points;
-                viewManager.UpdateInningScore(Team1InningScore, Team2InningScore);
             }
             else
             {
                 Team2InningScore += Points;
-                viewManager.UpdateInningScore(Team1InningScore, Team2InningScore);
             }
+
+            viewManager.UpdateInningScore(Team1InningScore, Team2InningScore);
         }
 
-        public void NewInning()
+        public void OnNewInningButtonClick()
         {
             Team1GameScore = (Team1InningScore - Team2InningScore) > 0 ? (Team1InningScore - Team2InningScore + Team1GameScore) : Team1GameScore;
             Team2GameScore = (Team2InningScore - Team1InningScore) > 0 ? (Team2InningScore - Team1InningScore + Team2GameScore) : Team2GameScore;
@@ -42,9 +47,11 @@ namespace CommonLib
             InningNumber++;
             viewManager.UpdateInningNumber(InningNumber);
             viewManager.WinningColors(WinningColors());
+            //GameType21OrOver();
+            GameType21Exactly();
         }
 
-        public void NewGame()
+        public void OnNewGameButtonClick()
         {
             Team1GameScore = 0;
             Team1InningScore = 0;
@@ -61,6 +68,50 @@ namespace CommonLib
         private int WinningColors()
         {
             return Team1GameScore > Team2GameScore ? 1 : Team2GameScore > Team1GameScore ? 2 : 3;
+        }
+
+        public void OnUndoButtonClick()
+        {
+            Team1InningScore = UndoTeam1Score;
+            Team2InningScore = UndoTeam2Score;
+            viewManager.UpdateInningScore(Team1InningScore, Team2InningScore);
+        }
+
+        private void GameType21OrOver()
+        {
+            if (Team1GameScore >= 21)
+            {
+                viewManager.ShowWinningMessage("Team 1 Wins");
+            }
+            if (Team2GameScore >= 21)
+            {
+                viewManager.ShowWinningMessage("Team 2 Wins");
+            }
+        }
+
+        private void GameType21Exactly()
+        {
+            if (Team1GameScore == 21)
+            {
+                viewManager.ShowWinningMessage("Team 1 Wins");
+            }
+            if (Team1GameScore > 21)
+            {
+                Team1GameScore = 11;
+                viewManager.ShowOver21Message("Team 1 has gone over 21. back to 11");
+                viewManager.UpdateGameScore(Team1GameScore, Team2GameScore);
+            }
+
+            if (Team2GameScore == 21)
+            {
+                viewManager.ShowWinningMessage("Team 2 Wins");
+            }
+            if (Team2GameScore > 21)
+            {
+                Team2GameScore = 11;
+                viewManager.ShowOver21Message("Team 2 has gone over 21. back to 11");
+                viewManager.UpdateGameScore(Team1GameScore, Team2GameScore);
+            }
         }
     }
 }

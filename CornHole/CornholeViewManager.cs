@@ -7,5 +7,7 @@ namespace CommonLib
         void UpdateGameScore(int team1GameScore, int team2GameScore);
         void UpdateInningNumber(int inningNumber);
         void WinningColors(int leadingTeam);
+        void ShowWinningMessage(string WinningMessage);
+        void ShowOver21Message(string Over21Message);
     }
 }
