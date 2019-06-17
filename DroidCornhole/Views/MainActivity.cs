@@ -9,7 +9,7 @@ using Android.Content;
 
 namespace DroidCornhole
 {
-    [Activity(Label = "@string/app_name", MainLauncher = true)]
+    [Activity(Label = "@string/app_name")]
     public class MainActivity : AppCompatActivity, ICornholeViewManager
     {
         CornholeViewModel viewModel;
@@ -41,7 +41,7 @@ namespace DroidCornhole
             OnNewGameButtoClick();
             OnUndoButtonClick();
 
-            TvTeam1Name.Text = "Tea 1 Name";
+            TvTeam1Name.Text = "Team 1 Name";
             TvTeam2Name.Text = "Team 2 Name";
         }
 
@@ -65,7 +65,7 @@ namespace DroidCornhole
         {
             BtnNextInning.Click += delegate
             {
-                viewModel.OnNewInningButtonClick();
+                viewModel.OnNewInningButtonClick(Intent.GetIntExtra("GameType", 1));
             };
         }
 

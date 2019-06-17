@@ -18,7 +18,7 @@ namespace iOSCornhole
             CornholeViewModel viewModel = new CornholeViewModel(this);
 
             OnPointButtonClick(viewModel);
-            btnNewInning.TouchUpInside += (sender, e) => viewModel.OnNewInningButtonClick();
+            btnNewInning.TouchUpInside += (sender, e) => viewModel.OnNewInningButtonClick(2);
             btnNewGame.TouchUpInside += (sender, e) => viewModel.OnNewGameButtonClick();
         }
 
@@ -70,6 +70,16 @@ namespace iOSCornhole
                 tvTeam1Name.BackgroundColor = UIColor.Clear;
                 tvTeam2Name.BackgroundColor = UIColor.Clear;
             }
+        }
+
+        public void ShowWinningMessage(string WinningMessage)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ShowOver21Message(string Over21Message)
+        {
+            throw new NotImplementedException();
         }
     }
 }

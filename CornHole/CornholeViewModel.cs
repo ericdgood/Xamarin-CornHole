@@ -34,21 +34,20 @@ namespace CommonLib
             viewManager.UpdateInningScore(Team1InningScore, Team2InningScore);
         }
 
-        public void OnNewInningButtonClick()
+        public void OnNewInningButtonClick(int GameType)
         {
             Team1GameScore = (Team1InningScore - Team2InningScore) > 0 ? (Team1InningScore - Team2InningScore + Team1GameScore) : Team1GameScore;
             Team2GameScore = (Team2InningScore - Team1InningScore) > 0 ? (Team2InningScore - Team1InningScore + Team2GameScore) : Team2GameScore;
             Team1InningScore = 0;
             Team2InningScore = 0;
 
+            SetGameType(GameType);
             viewManager.UpdateInningScore(Team1InningScore, Team2InningScore);
             viewManager.UpdateGameScore(Team1GameScore, Team2GameScore);
 
             InningNumber++;
             viewManager.UpdateInningNumber(InningNumber);
             viewManager.WinningColors(WinningColors());
-            //GameType21OrOver();
-            GameType21Exactly();
         }
 
         public void OnNewGameButtonClick()
@@ -68,6 +67,31 @@ namespace CommonLib
         private int WinningColors()
         {
             return Team1GameScore > Team2GameScore ? 1 : Team2GameScore > Team1GameScore ? 2 : 3;
+        }
+
+        public void SetGameType(int GameType)
+        {
+            switch (GameType)
+            {
+                case 1:
+                    GameType21Exactly();
+                    break;
+                case 2:
+                    GameType21OrOver();
+                    break;
+                case 3:
+                    // HighScore
+                    break;
+                case 4:
+                    // 7/21
+                    break;
+                case 5:
+                    // Go Long
+                    break;
+                default:
+                    GameType21Exactly();
+                    break;
+            }
         }
 
         public void OnUndoButtonClick()

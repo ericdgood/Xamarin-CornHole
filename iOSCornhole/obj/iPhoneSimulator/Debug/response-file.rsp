@@ -14,6 +14,7 @@
 --dsym=no
 -r=/Users/a206621635/Xamarin_CornHole/CornHole/bin/Debug/netstandard2.0/CommonLib.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll
+-r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Numerics.dll
@@ -163,7 +164,7 @@
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XPath.XDocument.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XPath.XmlDocument.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll
--r=/Users/a206621635/.nuget/packages/xamarin.essentials/1.0.1/lib/xamarinios10/Xamarin.Essentials.dll
+-r=/Users/a206621635/.nuget/packages/xamarin.essentials/1.1.0/lib/xamarinios10/Xamarin.Essentials.dll
 -r=/Users/a206621635/Xamarin_CornHole/CornHole/bin/Debug/netstandard2.0/CommonLib.dll
 --target-framework=Xamarin.iOS,v1.0
 --root-assembly=/Users/a206621635/Xamarin_CornHole/iOSCornhole/bin/iPhoneSimulator/Debug/iOSCornhole.exe
